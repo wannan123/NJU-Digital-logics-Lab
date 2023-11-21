@@ -18,7 +18,6 @@ class Vlfsr___024root final : public VerilatedModule {
     VL_OUT8(seg0,7,0);
     VL_OUT8(seg1,7,0);
     CData/*0:0*/ __Vtrigrprev__TOP__sw;
-    CData/*0:0*/ __VactDidInit;
     CData/*0:0*/ __VactContinue;
     IData/*31:0*/ __VstlIterCount;
     IData/*31:0*/ __VactIterCount;

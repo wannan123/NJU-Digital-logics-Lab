@@ -21,7 +21,7 @@ VL_ATTR_COLD void Vlfsr___024root___eval_static__TOP(Vlfsr___024root* vlSelf) {
     Vlfsr__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
     VL_DEBUG_IF(VL_DBG_MSGF("+    Vlfsr___024root___eval_static__TOP\n"); );
     // Body
-    vlSelf->ledr = 2U;
+    vlSelf->ledr = 1U;
 }
 
 VL_ATTR_COLD void Vlfsr___024root___eval_initial(Vlfsr___024root* vlSelf) {
@@ -127,7 +127,7 @@ VL_ATTR_COLD void Vlfsr___024root___dump_triggers__act(Vlfsr___024root* vlSelf) 
         VL_DBG_MSGF("         No triggers active\n");
     }
     if (vlSelf->__VactTriggered.at(0U)) {
-        VL_DBG_MSGF("         'act' region trigger index 0 is active: @([changed] sw)\n");
+        VL_DBG_MSGF("         'act' region trigger index 0 is active: @(posedge sw)\n");
     }
 }
 #endif  // VL_DEBUG
@@ -142,7 +142,7 @@ VL_ATTR_COLD void Vlfsr___024root___dump_triggers__nba(Vlfsr___024root* vlSelf) 
         VL_DBG_MSGF("         No triggers active\n");
     }
     if (vlSelf->__VnbaTriggered.at(0U)) {
-        VL_DBG_MSGF("         'nba' region trigger index 0 is active: @([changed] sw)\n");
+        VL_DBG_MSGF("         'nba' region trigger index 0 is active: @(posedge sw)\n");
     }
 }
 #endif  // VL_DEBUG
@@ -157,5 +157,4 @@ VL_ATTR_COLD void Vlfsr___024root___ctor_var_reset(Vlfsr___024root* vlSelf) {
     vlSelf->seg0 = 0;
     vlSelf->seg1 = 0;
     vlSelf->__Vtrigrprev__TOP__sw = 0;
-    vlSelf->__VactDidInit = 0;
 }
