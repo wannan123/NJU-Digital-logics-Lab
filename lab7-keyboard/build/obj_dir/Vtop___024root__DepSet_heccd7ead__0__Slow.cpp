@@ -22,7 +22,12 @@ VL_ATTR_COLD void Vtop___024root___eval_static__TOP(Vtop___024root* vlSelf) {
     VL_DEBUG_IF(VL_DBG_MSGF("+    Vtop___024root___eval_static__TOP\n"); );
     // Body
     vlSelf->seg0 = 0xffU;
-    vlSelf->top__DOT__my_keyboard__DOT__is_fd = 0U;
+    vlSelf->seg1 = 0xffU;
+    vlSelf->seg2 = 0xffU;
+    vlSelf->seg3 = 0xffU;
+    vlSelf->seg4 = 0xffU;
+    vlSelf->seg5 = 0xffU;
+    vlSelf->top__DOT__my_keyboard__DOT__is_fd = 1U;
 }
 
 VL_ATTR_COLD void Vtop___024root___eval_initial(Vtop___024root* vlSelf) {
@@ -86,10 +91,15 @@ VL_ATTR_COLD void Vtop___024root___ctor_var_reset(Vtop___024root* vlSelf) {
     vlSelf->ps2_data = 0;
     vlSelf->seg0 = 0;
     vlSelf->seg1 = 0;
+    vlSelf->seg2 = 0;
+    vlSelf->seg3 = 0;
+    vlSelf->seg4 = 0;
+    vlSelf->seg5 = 0;
     vlSelf->top__DOT__buffer = 0;
     vlSelf->top__DOT__my_keyboard__DOT__count = 0;
     vlSelf->top__DOT__my_keyboard__DOT__ps2_clk_sync = 0;
     vlSelf->top__DOT__my_keyboard__DOT__count2 = 0;
+    vlSelf->top__DOT__my_keyboard__DOT__count3 = 0;
     vlSelf->top__DOT__my_keyboard__DOT__is_fd = 0;
     vlSelf->top__DOT__my_keyboard__DOT____Vlvbound_h7d00f130__0 = 0;
     vlSelf->__Vtrigrprev__TOP__clk = 0;

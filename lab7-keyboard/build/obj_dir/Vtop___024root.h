@@ -19,9 +19,14 @@ class Vtop___024root final : public VerilatedModule {
     VL_IN8(ps2_data,0,0);
     VL_OUT8(seg0,7,0);
     VL_OUT8(seg1,7,0);
+    VL_OUT8(seg2,7,0);
+    VL_OUT8(seg3,7,0);
+    VL_OUT8(seg4,7,0);
+    VL_OUT8(seg5,7,0);
     CData/*3:0*/ top__DOT__my_keyboard__DOT__count;
     CData/*2:0*/ top__DOT__my_keyboard__DOT__ps2_clk_sync;
     CData/*5:0*/ top__DOT__my_keyboard__DOT__count2;
+    CData/*5:0*/ top__DOT__my_keyboard__DOT__count3;
     CData/*0:0*/ top__DOT__my_keyboard__DOT__is_fd;
     CData/*0:0*/ top__DOT__my_keyboard__DOT____Vlvbound_h7d00f130__0;
     CData/*0:0*/ __Vtrigrprev__TOP__clk;
